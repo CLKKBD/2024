@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu có Tùy chọn</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #fff;
+      border-right: 1px solid #ccc;
+      height: 100vh;
+    }
+
+    .menu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu-item {
+      position: relative;
+    }
+
+    .menu-link {
+      display: block;
+      padding: 12px 20px;
+      color: blue;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 1px solid #eee;
+    }
+
+    .menu-link:hover {
+      background-color: #f0f0f0;
+    }
+
+    .submenu {
+      display: none;
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      background-color: #ffffff;
+    }
+
+    .submenu li a {
+      display: block;
+      padding: 10px 35px;
+      color: blue;
+      text-decoration: none;
+      font-weight: normal;
+    }
+
+    .submenu li a:hover {
+      background-color: #f5f5f5;
+    }
+
+    .menu-item:hover .submenu {
+      display: block;
+    }
+
+    .menu-header {
+      background-color: #f4f4f4;
+      padding: 15px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-bottom: 2px solid #ddd;
+      color: #000;
+    }
+
+    .main-content {
+      flex-grow: 1;
+      background-color: #e6f0e6;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="menu-header">Tùy chọn</div>
+  <ul class="menu">
+    <li class="menu-item"><a href="#" class="menu-link">Giới thiệu chung</a></li>
+
+    <li class="menu-item">
+      <a href="#" class="menu-link">Bản đồ</a>
+      <ul class="submenu">
+        <li><a href="#">Bản đồ NO2</a></li>
+        <li><a href="#">Bản đồ O3</a></li>
+        <li><a href="#">Bản đồ CO</a></li>
+        <li><a href="#">Bản đồ SO2</a></li>
+      </ul>
+    </li>
+
+    <li class="menu-item">
+      <a href="#" class="menu-link">Dữ liệu tại trạm quan trắc</a>
+      <ul class="submenu">
+        <li><a href="#">Nồng độ NO2</a></li>
+        <li><a href="#">Nồng độ O3</a></li>
+        <li><a href="#">Nồng độ CO</a></li>
+      </ul>
+    </li>
+
+    <li class="menu-item"><a href="#" class="menu-link">Thống kê</a></li>
+    <li class="menu-item"><a href="#" class="menu-link">Biểu đồ</a></li>
+    <li class="menu-item"><a href="#" class="menu-link">Liên hệ</a></li>
+  </ul>
+</div>
+
+<div class="main-content">
+  <h1>Chào mừng!</h1>
+  <p>Nội dung hiển thị ở đây.</p>
+</div>
+
+</body>
+</html>
