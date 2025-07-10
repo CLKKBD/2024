@@ -243,25 +243,25 @@
             attribution: '&copy; OpenStreetMap contributors'
         }).addTo(map);
         // Lớp "ranhgioixabd1" từ GeoServer (WMS)
-        var ranhgioixabd1 = L.tileLayer.wms('http://192.168.1.5:8080/geoserver/BinhDuong/wms', {
+        var ranhgioixabd1 = L.tileLayer.wms('http://192.168.1.8:8080/geoserver/BinhDuong/wms', {
             layers: 'BinhDuong:NO2pl', // Thay bằng tên lớp chính xác
             format: 'image/png',
             transparent: true
         }).addTo(map);
         // Lớp "ranhgioibd" từ GeoServer (WMS)
-        var ranhgioibd = L.tileLayer.wms('http://localhost:8080/geoserver/BinhDuong/wms', {
+        var ranhgioibd = L.tileLayer.wms('http://192.168.1.8/geoserver/BinhDuong/wms', {
             layers: 'BinhDuong:NO2pl2', // Thay bằng tên lớp chính xác
             format: 'image/png',
             transparent: true
         }).addTo(map);
         // Lớp "ranhgioibd" từ GeoServer (WMS)
-        var thang3 = L.tileLayer.wms('http://localhost:8080/geoserver/BinhDuong/wms', {
+        var thang3 = L.tileLayer.wms('http://192.168.1.8:8080/geoserver/BinhDuong/wms', {
             layers: 'BinhDuong:NO2pl3', // Thay bằng tên lớp chính xác
             format: 'image/png',
             transparent: true
         }).addTo(map);
         // Lớp "ranhgioibd" từ GeoServer (WMS)
-        var thang4 = L.tileLayer.wms('http://localhost:8080/geoserver/BinhDuong/wms', {
+        var thang4 = L.tileLayer.wms('http://192.168.1.8:8080/geoserver/BinhDuong/wms', {
             layers: 'BinhDuong:NO2pl4', // Thay bằng tên lớp chính xác
             format: 'image/png',
             transparent: true
